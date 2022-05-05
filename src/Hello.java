@@ -2,14 +2,19 @@ public class Hello {
 
     public static void main(String[] args) {
 
-        getHello_world();
+        // object instantiated to call method.
+
+        Printer myPrinter = new Printer();
+        myPrinter.getHello_world();
+
+
+        // second object calling a different constructor
+        Printer myOtherPrinter = new Printer("Hello", 21);
+
+        // we'll call a different method
+        myOtherPrinter.printDetails();
+
     }
 
-    /**
-     * static method - can be called without instantiating an object
-     */
-    private static void getHello_world() {
-        System.out.println("Hello world");
-    }
 }
 
