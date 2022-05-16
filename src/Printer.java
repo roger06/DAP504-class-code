@@ -18,7 +18,7 @@ public class Printer {
     }
 
     /**
-     *  method - no longer statix
+     *  method - no longer static
      *  can be only called by an object
      */
     public void getHello_world() {
