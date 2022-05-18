@@ -13,6 +13,25 @@ public class User {
         );
     }
 
+    public User createUser(String type){
+
+        if (type == "Student") {
+            User user = new Student();
+            return user;
+        }
+
+        if (type == "Staff") {
+            User user = new Tutor();
+            return user;
+        }
+
+     return null;
+
+    }
+
+
+
+
 
     public String giveFirstName() {
         return firstName;
