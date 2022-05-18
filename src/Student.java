@@ -6,8 +6,8 @@ public class Student extends User {
     public void showFullName() {
 
         System.out.println("Student name = "
-                + firstName + "  "
-                + lastName
+                + giveFirstName() + "  "
+                + getLastName()
 
         );
     }

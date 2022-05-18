@@ -7,12 +7,16 @@ public class Hello {
     public static void main(String[] args) {
 
         Student student1 = new Student();
-        student1.firstName = "Bob";
+        student1.setFirstName("Bob");
 
+        System.out.println("Student 1's name is : " + student1.giveFirstName();
         Student student2 = new Student();
-        student2.firstName = "Susan";
+        student2.setFirstName("Susan");
+        System.out.println("Student 2's name is : " + student2.giveFirstName());
 
-        UserManager.selectStudent(student1, student2);
+
+        System.out.println(UserManager.selectStudent(student1, student2).giveFirstName());
+
 
 
     }

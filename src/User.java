@@ -1,19 +1,32 @@
 public class User {
 
-    public String firstName;
-    public String lastName;
+    private String firstName;
+    private String lastName;
     int libraryCode;
-
-
 
     public void showFullName() {
 
         System.out.println("Full name = "
-                + firstName + "  "
-                + lastName
+                + giveFirstName() + "  "
+                + getLastName()
 
         );
     }
 
 
+    public String giveFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
 }
