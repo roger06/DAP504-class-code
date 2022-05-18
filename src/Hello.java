@@ -6,13 +6,13 @@ public class Hello {
 
     public static void main(String[] args) {
 
-//        not here we're not instantiating an object but neither are we accessing a static method
-        int userNum = new MyScanner().getUserInput();
+        Student student1 = new Student();
+        student1.firstName = "Bob";
 
-        System.out.println("You entered: " + userNum);
+        Student student2 = new Student();
+        student2.firstName = "Susan";
 
-
-
+        UserManager.selectStudent(student1, student2);
 
 
     }
