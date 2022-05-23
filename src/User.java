@@ -1,6 +1,6 @@
 public class User {
 
-    public String firstName;
+    private String firstName;
     public String lastName;
     int libraryCode;
 
@@ -9,11 +9,18 @@ public class User {
     public void showFullName() {
 
         System.out.println("Full name = "
-                + firstName + "  "
+                + getFirstName() + "  "
                 + lastName
 
         );
     }
 
 
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
 }
