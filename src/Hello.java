@@ -6,12 +6,9 @@ public class Hello {
 
     public static void main(String[] args) {
 
-
-        String modCode = "dap504444";
+        String modCode = "Those who find themselves ridiculous, sit down next to me...";
 
         Student test = new Student("charlie", "Smith");
-
-
 
         char[] chars = modCode.toCharArray();
 
