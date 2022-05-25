@@ -6,6 +6,13 @@
     </constraints>
     <properties/>
     <border type="none"/>
-    <children/>
+    <children>
+      <component id="cf3f2" class="javax.swing.JLabel" binding="myLabel">
+        <constraints/>
+        <properties>
+          <text value="this is a label"/>
+        </properties>
+      </component>
+    </children>
   </grid>
 </form>

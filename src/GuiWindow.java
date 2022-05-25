@@ -2,6 +2,7 @@ import javax.swing.*;
 
 public class GuiWindow {
     private JPanel mainPanel;
+    private JLabel myLabel;
 
     public static void main(String[] args) {
 
