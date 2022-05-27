@@ -1,7 +1,15 @@
-public class Student   {
-    
-   String firstName, lastName;
+import com.google.gson.annotations.SerializedName;
+
+public class Student {
+    @SerializedName("first_name")   // perhaps not the prettiest way, but this works.
+    public String firstName;
+
+    @SerializedName("last_name")
+    String lastName;
     String studentNumber;
+    String email;
+
+
 
     public Student(String firstName, String lastName) {
         this.firstName = firstName;
@@ -17,8 +25,8 @@ public class Student   {
         );
     }
 
-    public void showStudentNumber(){
+    public void showStudentNumber() {
         System.out.println(studentNumber);
     }
-    
+
 }

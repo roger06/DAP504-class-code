@@ -12,11 +12,11 @@ import java.util.ArrayList;
  */
 public class JsonToArrayList {
 
-    public  ArrayList<Student> jsonToArrayList() {
+    public static ArrayList<Student> jsonToArrayList() {
 
         Gson gson = new Gson();
 
-        try (Reader reader = new FileReader("data/players-attrs.json")) {
+        try (Reader reader = new FileReader(ImportStudents.filePath)) {
 
             // Convert JSON File to Java Object
             Type listType  = new TypeToken<ArrayList<Student>>(){}.getType();

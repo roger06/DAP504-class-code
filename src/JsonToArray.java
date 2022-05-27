@@ -11,17 +11,17 @@ import java.io.Reader;
  */
 public class JsonToArray {
 
-    static String filePath = "data/students.json";
+
 
     public static Student[] jsonToArray() {
         Gson gson = new Gson();
 
-        try (Reader reader = new FileReader(filePath)) {
+        try (Reader reader = new FileReader(ImportStudents.filePath)) {
 
             // Convert JSON File to Java Object
-            Student[] playerArray = gson.fromJson(reader, Student[].class);
+            Student[] studentArray = gson.fromJson(reader, Student[].class);
 
-            return playerArray;
+            return studentArray;
 
         } catch (IOException e) {
             e.printStackTrace();
