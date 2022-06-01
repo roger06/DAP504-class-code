@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="DAP504-class-code:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/DAP504_class_code_jar</output-path>
+    <root id="archive" name="DAP504-class-code.jar">
+      <element id="module-output" name="DAP504-class-code" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/gson-2.8.5.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

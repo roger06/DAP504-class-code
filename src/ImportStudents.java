@@ -1,10 +1,16 @@
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class ImportStudents {
 
     public static String filePath = "data/students.json";
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
+
+
+        System.out.println("Read JSON into a temporary array and loop through");
+        JsonReader.jsonRead();
+
 
         System.out.println("Read students from students.json\n1. Loop through\n2. read into array\n3. read into arrayList");
 
