@@ -15,5 +15,12 @@ public class Student extends User {
     public void showStudentNumber(){
         System.out.println(studentNumber);
     }
-    
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "studentNumber='" + studentNumber + '\'' +
+                firstName +
+                '}';
+    }
 }

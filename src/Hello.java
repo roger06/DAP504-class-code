@@ -2,46 +2,15 @@ import java.util.ArrayList;
 
 public class Hello {
 
-    static ArrayList<User> userList = new ArrayList<User>();
 
     public static void main(String[] args) {
 
         Student student = new Student();
         student.firstName = "Roger";
         student.studentNumber = "123456789";
-        student.showFullName();
-        student.showStudentNumber();
-        Tutor tutor = new Tutor();
-        tutor.firstName = "Bob";
-        Admin admin = new Admin();
-        admin.firstName = "Kevin";
-
-        userList.add(student);
-        userList.add(tutor);
-        userList.add(admin);
 
 
-
-
-        for (int i = 0; i < userList.size() ; i++) {
-
-            System.out.println("super class " + userList.get(i).getClass().getSuperclass());
-
-
-
-            System.out.print(userList.get(i).firstName  );
-
-
-
-            if ( userList.get(i) instanceof Student) {
-                System.out.println(" is a student");
-            } else if (  userList.get(i) instanceof Tutor) {
-
-                System.out.println(" is a tutor");
-
-
-            }
-        }
+        System.out.println(student);
 
 
 
