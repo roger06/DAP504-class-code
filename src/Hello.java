@@ -22,15 +22,20 @@ public class Hello {
 
 
 
+
         for (int i = 0; i < userList.size() ; i++) {
 
-            System.out.println(userList.get(i).firstName);
+            System.out.print(userList.get(i).firstName  );
+
+            if ( userList.get(i) instanceof Student) {
+                System.out.println(" is a student");
+            } else if (  userList.get(i) instanceof Tutor) {
+
+                System.out.println(" is a tutor");
+
+
+            }
         }
-
-        
-
-        userList.forEach((n) -> System.out.println(n.firstName));
-
 
 
 
