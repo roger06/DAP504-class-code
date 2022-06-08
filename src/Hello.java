@@ -25,7 +25,13 @@ public class Hello {
 
         for (int i = 0; i < userList.size() ; i++) {
 
+            System.out.println("super class " + userList.get(i).getClass().getSuperclass());
+
+
+
             System.out.print(userList.get(i).firstName  );
+
+
 
             if ( userList.get(i) instanceof Student) {
                 System.out.println(" is a student");
