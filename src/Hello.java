@@ -2,23 +2,45 @@ public class Hello {
 
     public static void main(String[] args) {
 
-        String studentType = "fulltime";
-        System.out.println(studentType);
+        Thread rt = new Thread(new MyRunnable());
 
-        if (studentType == "fulltime") {
-            studentType = StudentType.DA.toString();
-        }
+        rt.setName("Threadie Mercury");
+        rt.start();
 
-        System.out.println(studentType);
+        Thread rt2 = new Thread(new MyRunnable());
 
-        for (StudentType x : StudentType.values() ) {
 
-            System.out.println(x);
+        rt2.setName("Al-Thread Hitchcock");
+        rt2.start();
+
+        Thread rt3 = new Thread(() -> {
             
-        }
+        });
+
+
+//        MyThread thread = new MyThread();
+//        thread.setName("Gerald");
+//        thread.start();
+//
+//        MyThread thread2 = new MyThread();
+//        thread2.setName("Bob");
+//        thread2.start();
+
+
+
+//        System.out.println("other thread = " + thread.getName());
+//        System.out.println("Thread = " + Thread.currentThread().getName());
+
+
+
 
     } // end main()
 
+    public static void loop(){
+        for(int i = 10; i<20; i++){
+            System.out.println(i);
+        }
+    }
 
 }
 
